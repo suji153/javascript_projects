@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        h1{
+            font-family: 'Robust',sans-serif;
+            font-weight: bold;
+        }
+        h1:hover{
+            text-shadow: 2px 2px 14px black;
+            animation: 2s;
+        }
+        #btn{
+         font-size: 30px;
+         border-radius: 20px;
+         padding: 30px;
+         cursor: pointer;
+         box-shadow: inset;
+         background-color: bisque;
+         margin: 100px 150px;
+        }
+        #resetbtn{
+         font-size: 30px;
+         border-radius: 20px;
+         padding: 30px;
+         cursor: pointer;
+         box-shadow: inset;
+         background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Color Changer</h1></center>
+    <button id="btn">Click!</button>
+    <button id="resetbtn">Reset</button>
+    <div></div>
+    <script>
+       document.getElementById("btn").addEventListener("click",function(){
+        //To change the background with fixed color we use this 
+        //document.body.style.backgroundColor="lavender";
+
+        //To change the background color with random color
+        let red=Math.floor(Math.random() * 256);
+        let green=Math.floor(Math.random() * 256);
+        let blue=Math.floor(Math.random() * 256);
+
+        let randomColor=`rgb(${red},${green},${blue})`;
+        document.body.style.backgroundColor=randomColor;
+
+        //To add the reset button
+         document.getElementById("resetbtn").addEventListener("click",function(){
+            document.body.style.backgroundColor="white";
+         })
+       })
+       //Display the hex values of the random color
+    </script>
+</body>
+</html>
