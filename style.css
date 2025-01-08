@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("pic.jpg");
+    background-size: 100%;
+}
+h2{
+    font-size: 80px;
+    font-family: 'Lato',sans-serif;
+    /*margin-left: 45px;*/
+    text-align: center;
+    
+}
+h3{
+    font-size: 70px;
+   /* margin-left: 195px;*/
+   text-align: center;
+}
+#increment-btn{
+    font-size: 25px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 90px;
+    width: 280px;
+}
+#increment-btn:hover{
+    background-color: lavender;
+    color: black;
+    cursor: pointer;
+
+}
+#save-btn{
+    font-size: 25px;
+    padding: 18px;
+    border-radius: 20px;
+    width: 190px;
+    margin-left:  134px;
+    /*width: 280px;*/
+}
+#save-btn:hover{
+    background-color: bisque;
+    cursor: pointer;
+}
+.div-sec{
+    border: 2px solid rgb(245, 83, 83);
+    width: 30%;
+    backdrop-filter: blur(2px);
+   /* margin-left: 550px;*/
+   margin: 20px auto;
+   padding: 20px;
+   box-sizing: border-box;
+   height: auto;
+   border-radius: 40px;
+}
+.buttons{
+    margin-bottom: 60px;
+    
+    
+}
+.buttons button{
+    margin-bottom: 20px;
+}
+h2,h3{
+    margin: 0;
+    padding: 0;
+}
+#saved-counts{
+    color: white;
+    font-family: 'Lato',sans-serif;
+}
